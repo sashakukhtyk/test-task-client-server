@@ -6,10 +6,11 @@
     <title>Home</title>
 </head>
 <body>
-    <form>
+    <form action="/add" method="post">
+        {% csrf_token %}
         <div class="mb-3">
             <label for="textInput" class="form-label">Text Input</label>
-            <input type="text" class="form-control" id="textInput" placeholder="Enter text">
+            <input type="text" class="form-control" id="textInput" placeholder="Enter text", Required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
