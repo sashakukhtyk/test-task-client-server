@@ -29,7 +29,7 @@ This project is a client-server application designed to demonstrate basic networ
 2. Install required Python packages:
    ```bash
    pip install -r requirements.txt
-   ```
+```markdown
 
 ### Configuration
 
