@@ -24,12 +24,12 @@ This project is a client-server application designed to demonstrate basic networ
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/test-task-client-server.git
-```markdown
+```
 
 2. Install required Python packages:
    ```bash
    pip install -r requirements.txt
-```markdown
+```
 
 ### Configuration
 
