@@ -1,6 +1,16 @@
 import socket
 from cryptography.fernet import Fernet
-from .key_generator import encrypt_data
+
+
+# Load the key from the file
+with open('secret.key', 'rb') as key_file:
+    key = key_file.read()
+
+cipher_suite = Fernet(key)
+
+
+def encrypt_data(data):
+    return cipher_suite.encrypt(data.encode('utf-8'))
 
 
 def send_data(data):
