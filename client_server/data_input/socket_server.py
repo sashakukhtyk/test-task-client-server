@@ -1,7 +1,7 @@
 import socket
 import psycopg2
 from cryptography.fernet import Fernet
-from .key_generator import decrypt_data
+from key_generator import decrypt_data
 
 HOST = 'localhost'  # The server's hostname or IP address
 PORT = 65432        # The port used by the server
