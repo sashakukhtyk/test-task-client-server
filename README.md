@@ -33,7 +33,7 @@ This project is a client-server application designed to demonstrate basic networ
 
 ### Configuration
 
-1. Update the `config.py` file with your database connection details and encryption key.
+1. Update the `settings.py` file with your database connection details and encryption key.
 
 ### Running the Application
 
