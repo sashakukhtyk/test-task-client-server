@@ -25,7 +25,6 @@ This project is a client-server application designed to demonstrate basic networ
    ```bash
    git clone https://github.com/yourusername/test-task-client-server.git
 ```
-
 2. Install required Python packages:
    ```bash
    pip install -r requirements.txt
