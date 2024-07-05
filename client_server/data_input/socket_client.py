@@ -1,11 +1,7 @@
 import socket
 from cryptography.fernet import Fernet
+from .key_generator import encrypt_data
 
-key = Fernet.generate_key()
-cipher_suite = Fernet(key)
-
-def encrypt_data(data):
-    return cipher_suite.encrypt(data.encode('utf-8'))
 
 def send_data(data):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
