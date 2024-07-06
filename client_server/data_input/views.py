@@ -2,13 +2,14 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .socket_client import send_data
 
+
 def home(request):
-    return render(request, 'home.html')
-                  
-                  
+    return render(request, "home.html")
+
+
 def add(request):
-    if request.method == 'POST':
-        data = request.POST['data']
+    if request.method == "POST":
+        data = request.POST["data"]
         if data:
             try:
                 send_data(data)
